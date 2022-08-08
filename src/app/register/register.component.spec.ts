@@ -56,7 +56,7 @@ describe('RegisterComponent', () => {
   });
 
   it('should call submitUserForm with valid registrationForm', () => {
-    component.registrationForm.controls['name'].setValue("King Julian");
+    component.registrationForm.controls['name'].setValue("King Julien");
     component.registrationForm.controls['email'].setValue("kingj@gmail.com");
     component.registrationForm.controls['bio'].setValue("Hi my name is King Julien and I like to move it move it.");
     component.registrationForm.controls['password'].setValue("password");
@@ -66,7 +66,7 @@ describe('RegisterComponent', () => {
   })
 
   it('should call submitUserForm with invalid registrationForm', () => {
-    const mySpy = spyOn(service, 'getUserRegistration').and.returnValue(of({ "success": false }));
+    const mySpy = spyOn(service, 'getUserRegistration').and.returnValue(of({ "success": true }));
     component.submitUserForm();
     expect(mySpy).not.toHaveBeenCalled();
   });

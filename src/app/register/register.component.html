@@ -8,22 +8,22 @@
                 <mat-card-content>
                     <mat-form-field appearance="outline">
                         <mat-label>Name</mat-label>
-                        <input matInput placeholder="Name" formControlName="name">
+                        <input matInput formControlName="name">
                         <mat-error *ngIf="formError('name', 'required')">Name is required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input matInput placeholder="Email" type="email" formControlName="email">
+                        <input matInput type="email" formControlName="email">
                         <mat-error *ngIf="formError('email', 'required')">Email is required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput placeholder="Password" formControlName="password">
+                        <input matInput formControlName="password">
                         <mat-error *ngIf="formError('password', 'required')">Password is required</mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
                         <mat-label>Bio</mat-label>
-                        <input matInput placeholder="Bio" formControlName="bio">
+                        <input matInput formControlName="bio">
                         <mat-error *ngIf="formError('bio', 'required')">Bio is required</mat-error>
                     </mat-form-field>
                 </mat-card-content>

@@ -20,9 +20,9 @@ export class RegisterComponent implements OnInit {
   }
   buildRegistrationControl() {
     this.registrationForm = this.fb.group({
-      name: ['', [Validators.required, Validators.pattern("King Julien")]],
-      email: ['', [Validators.required, Validators.email,Validators.pattern("kingj@gmail.com")]],
-      bio: ['', [Validators.required, Validators.pattern("My name is King Julien and I like to move it move it.")]],
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      bio: ['', [Validators.required]],
       password: ['', [Validators.required]]
     })
   }
