@@ -6,6 +6,7 @@ import { AngularMaterialModule } from '../angular-material.module';
 import { AuthGuard } from '../authguard/auth.guard';
 import { ApiService } from '../services/api.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { RegisterComponent } from './register.component';
 import { of } from 'rxjs';

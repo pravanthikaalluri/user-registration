@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     ProfileComponent
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ], 
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -29,5 +32,6 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
