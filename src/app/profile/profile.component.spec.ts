@@ -1,11 +1,10 @@
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
 import { AngularMaterialModule } from '../angular-material.module';
 import { AuthGuard } from '../guards/auth.guard';
 import { ApiService } from '../services/api.service';
-
 import { ProfileComponent } from './profile.component';
+import { of } from 'rxjs';
 
 describe('ProfileComponent', () => {
   let component: ProfileComponent;
